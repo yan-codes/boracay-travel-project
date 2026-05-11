@@ -1,10 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 header {
@@ -47,12 +52,56 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 16px 32px;
-  background: rgb(67, 233, 42);
+  background: rgb(87, 18, 137);
   display: inline-block;
   margin-top: 32px;
   border-radius: 7px;
 
-  color: black;
+  color: azure;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  color: azure;
+  background-image:
+    linear-gradient(rgba(39, 32, 68, 0.7)), url("../images/boracay\ footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 40%;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
 }
 
 @media (max-width: 900px) {
