@@ -1,9 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ body {
 
 header {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    linear-gradient(rgba(91, 108, 207, 0.5), rgba(91, 108, 207, 0.5)),
     url("../images/boracay_beach_hero2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +35,7 @@ header h1 {
   font-size: 96px;
   line-height: 1.5;
   margin: 0;
+  color: #f7f3eb;
 }
 
 header h2 {
@@ -42,6 +43,7 @@ header h2 {
   font-size: 40px;
   line-height: 1.5;
   margin: 0;
+  color: #f7f3eb;
 }
 
 header h3 {
@@ -49,6 +51,7 @@ header h3 {
   font-size: 24px;
   line-height: 1.5;
   margin: 0;
+  color: #f7f3eb;
 }
 
 header a {
@@ -60,12 +63,23 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 16px 32px;
-  background: rgb(14, 1, 248);
+  background: #00c0d1;
   display: inline-block;
   margin-top: 32px;
-  border-radius: 7px;
+  border-radius: 15px;
+  color: #f7f3eb;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
 
-  color: azure;
+header a:hover {
+  background-color: #04d6ea;
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 main {
@@ -100,20 +114,29 @@ main p {
   opacity: 0.7;
 }
 
+.highlight {
+  color: #50b2c0;
+  font-style: italic;
+}
+
 .img-responsive {
   max-width: 100%;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+}
+
+section.secondary {
+  background: #f7f5f0;
 }
 
 footer {
   color: azure;
   background-image:
-    linear-gradient(rgba(39, 32, 68, 0.7)), url("../images/boracay\ footer.jpg");
+    linear-gradient(rgba(68, 39, 83, 0.8)), url("../images/boracay\ footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% 40%;
