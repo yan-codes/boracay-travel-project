@@ -7,19 +7,6 @@ body {
   margin: 0 auto;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-columns-with-first-narrow {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-
 header {
   background-image:
     linear-gradient(rgba(91, 108, 207, 0.5), rgba(91, 108, 207, 0.5)),
@@ -63,7 +50,7 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 16px 32px;
-  background: #00c0d1;
+  background: #f97316;
   display: inline-block;
   margin-top: 32px;
   border-radius: 15px;
@@ -75,7 +62,7 @@ header a {
 }
 
 header a:hover {
-  background-color: #04d6ea;
+  background-color: #fc852f;
   transform: translateY(-1px);
   box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -83,7 +70,7 @@ header a:hover {
 }
 
 main {
-  background-color: white;
+  background-color: #fef9f9;
 }
 
 main h2 {
@@ -105,6 +92,22 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
 main p {
   font-style: normal;
   font-weight: 400;
@@ -112,6 +115,64 @@ main p {
   line-height: 1.5;
   color: #272044;
   opacity: 0.7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-img {
+  max-width: 100%;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: #fef9f9;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+  width: 185px;
+  height: auto;
+}
+
+.btn {
+  display: block;
+  color: #f7f3eb;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #f97316;
 }
 
 .highlight {
@@ -130,13 +191,13 @@ section {
 }
 
 section.secondary {
-  background: #f7f5f0;
+  background: #f7f3eb;
 }
 
 footer {
   color: azure;
   background-image:
-    linear-gradient(rgba(68, 39, 83, 0.8)), url("../images/boracay\ footer.jpg");
+    linear-gradient(rgba(48, 28, 59, 0.8)), url("../images/boracay\ footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% 40%;
