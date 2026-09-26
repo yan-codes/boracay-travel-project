@@ -1,10 +1,11 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0 auto;
+  background: linear-gradient(rgb(18, 11, 94) 1.1%, rgb(150, 12, 62) 130.5%);
 }
 
 .container {
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 header {
@@ -203,6 +204,7 @@ main p {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 section {
